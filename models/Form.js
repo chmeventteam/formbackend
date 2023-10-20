@@ -6,7 +6,7 @@ const formSchema = new Schema({
   receiptNo : String,
   classN : String , 
   educationLevel:String,
-  rollNo : String,
+  rollNo : {type:String,unique:true},
   receiptImageUrl: String,
   accepted: Boolean,
   rejected:Boolean,

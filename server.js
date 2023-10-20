@@ -46,6 +46,10 @@ app.post('/api/upload', upload.single('file'), (req, res) => {
   }).end(req.file.buffer);
 });
 
+app.get('/call',(req,res)=>{
+res.json('hello');
+});
+
 // Routes
 import formRoutes from './routes/formRoutes.js';
 app.use('/api/forms', formRoutes);
